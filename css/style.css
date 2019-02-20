@@ -1,0 +1,1727 @@
+@font-face {
+    font-family: 'Skoda Pro';
+    src: url('../fonts/skodapro-regular.eot') format('embedded-opentype'),
+    url('../fonts/skodapro-regular.woff') format('woff'),
+    url('../fonts/skodapro-regular.ttf')  format('truetype');
+   
+}
+
+@font-face {
+	font-family: "SkodaPro_Regular";
+	src: url('../fonts/SkodaPro_Regular/SkodaPro_Regular.eot');
+	src: url('../fonts/SkodaPro_Regular/SkodaPro_Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/SkodaPro_Regular/SkodaPro_Regular.woff') format('woff'),
+		 url('../fonts/SkodaPro_Regular/SkodaPro_Regular.ttf') format('true-type');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SkodaPro_Medium";
+	src: url('../fonts/SkodaPro_Medium/SkodaPro_Medium.eot');
+	src: url('../fonts/SkodaPro_Medium/SkodaPro_Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/SkodaPro_Medium/SkodaPro_Medium.woff') format('woff'),
+		 url('../fonts/SkodaPro_Medium/SkodaPro_Medium.ttf') format('true-type');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SkodaPro_LightItalic";
+	src: url('../fonts/SkodaPro_LightItalic/SkodaPro_LightItalic.eot');
+	src: url('../fonts/SkodaPro_LightItalic/SkodaPro_LightItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/SkodaPro_LightItalic/SkodaPro_LightItalic.woff') format('woff'),
+		 url('../fonts/SkodaPro_LightItalic/SkodaPro_LightItalic.ttf') format('true-type');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SkodaPro_Bold";
+	src: url('../fonts/SkodaPro_Bold/SkodaPro_Bold.eot');
+	src: url('../fonts/SkodaPro_Bold/SkodaPro_Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/SkodaPro_Bold/SkodaPro_Bold.woff') format('woff'),
+		 url('../fonts/SkodaPro_Bold/SkodaPro_Bold.ttf') format('true-type');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "SkodaPro_Medium", Arial, sans-serif;
+} 
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-image: url(../img/cirle.png);
+}
+
+a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.st0 {
+    transition: all .5s ease;
+}
+.social_link{
+    width: 27px;
+    height: 27px;
+}
+
+.social_link:hover .social2 {
+transform: scale(1.2);
+ transition: .5s ease;
+ 
+}
+.main-menu-wrapper{
+    display: block;
+    z-index: 121;
+}
+
+.social2{
+   width: 27px;
+    height: 27px;
+    margin: 21px;
+}
+
+.social2:hover path{
+    fill: #3c92ca;
+    
+   
+}
+
+p {
+	margin-bottom: 0rem;
+}
+
+.first_section{
+    position: relative;
+    background: url('../img/fon1.png') no-repeat center / cover;
+
+}
+.first_section::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0, .6);
+}
+.header{
+    display: flex;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 12;
+}
+
+.logo-wrapper{
+    position: relative;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+
+.main-menu-list{
+color: #ffffff;
+font-family: "SkodaPro_Medium";
+font-size: 18px;
+font-weight: 500;
+margin: 0;
+display: flex;
+}
+.main-menu-item:hover:after,
+.main-menu-item:focus:after {
+    width: 100%;
+    
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu-item:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #3c92ca;
+    transition: width .3s ease-in-out;
+    margin-top: -4px;
+}
+.main-menu-item {
+    display: inline-block;
+    margin: 0 19px;
+}
+
+.main-menu-link{
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.text-block{
+border: 6px solid #ffffff;
+margin-top: 40px;
+padding: 39px;
+}
+
+.title-first-part{
+width: 540px;
+height: 222px;
+color: #ffffff;
+font-family: "SkodaPro_Bold";
+font-size: 60px;
+font-weight: 900;
+line-height: 80px;
+}
+.social1{
+    margin-left: 45px;
+}
+.title-second-part{
+    margin-top: 30px; 
+width: 450px;
+height: 107px;
+color: #ffffff;
+font-family: "Skoda Pro";
+font-size: 43px;
+font-weight: 400;
+line-height: 57px;
+}
+
+.form-block{
+margin-top: 40px;
+background: rgba(112, 114, 113, 0.7);
+padding: 20px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.social{
+    margin: 21px;
+}
+.svg_facebook{
+width: 27px;
+height: 27px;
+}
+.vertical_line{
+    border-left: 2px solid rgb(174, 174, 174);
+    height: 85px;
+    margin-left: 79px;
+   
+}
+.last-part-title{
+    margin-top: 40px;
+    margin-left: -38px;
+}
+.form-title{
+width: 224px;
+height: 76px;
+color: #ffffff;
+font-family: "Skoda Pro";
+font-size: 36px;
+font-weight: 900;
+line-height: 43px;
+font-variant: small-caps;
+margin: auto;
+text-align: center;
+}
+input{
+    width: 255px;
+    height: 36px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #d0cece;
+    margin: 30px;
+    color: #d0cece;
+    width: 280px;
+    margin-left: 1px;
+    margin-bottom: 41px;
+    font-family: "SkodaPro_LightItalic"
+}
+
+.first_form{
+    width: 255px;
+    height: 26px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #d0cece;
+    color: #d0cece;
+    width: 280px;
+    margin-bottom: 49px;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+input:focus {
+    outline: none;
+}
+::-webkit-input-placeholder { 
+    color: #d0cece;
+    font-style: italic;
+    font-size: 21px;
+  }
+  ::-moz-placeholder { 
+    color: p#d0cece;
+    font-style: italic;
+    font-size: 21px;
+  }
+  :-ms-input-placeholder { 
+    color: #d0cece;
+    font-style: italic;
+    font-size: 21px;
+  }
+  :-moz-placeholder { 
+    color: #d0cece;
+    font-style: italic;
+    font-size: 21px;
+  }
+
+.btn_form{
+    width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #3c92ca;
+    border: 0px;
+    margin-left: 10px;
+    border: 0px;
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.btn_form:focus{
+
+    outline: none;
+}
+.btn_form:hover{
+   background-color: #d0cece;
+   transition: 0.5s;
+   color: #000;
+}
+
+
+input::-webkit-input-placeholder { 
+  
+  margin-bottom: 10px;
+}
+input::-moz-placeholder { 
+  
+  margin-bottom: 10px;
+}
+input:-ms-input-placeholder { 
+  
+  margin-bottom: 10px;
+}
+input:-moz-placeholder { 
+  
+  margin-bottom: 10px;
+}
+
+.btn_form_text{
+width: 146px;
+height: 18px;
+color: #ffffff;
+font-family: "Skoda Pro";
+font-size: 24px;
+font-weight: 600;
+line-height: 43px;
+margin: 0 auto 26px;
+}
+.btn_form:hover .btn_form_text{
+    transition: 0.5s;
+     color: #000;
+}
+.section2{
+
+color: #131313;
+font-family: "Skoda Pro";
+font-size: 36px;
+font-weight: 700;
+margin: 0 auto;
+text-align: center;
+margin-top: 64px; 
+}
+.skill_section{
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+.skill{
+width: 540px;
+height: 228px;
+border-radius: 10px;
+border: 1px solid #8e8e8e;
+background-color: #fafafa;
+padding: 20px;
+margin-top: 40px;
+}
+.skill_title1 {
+    height: 21px;
+    color: #3c92ca;
+    font-family: "SkodaPro_Medium";
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    width: 184px;
+}
+.skill_title2{
+    width: 101px;
+    height: 35px;
+    color: #3c92ca;
+    font-family: "SkodaPro_Medium";
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 67px;
+}
+.skill_title3{
+    width: 88px;
+    height: 35px;
+    color: #3c92ca;
+    font-family: "SkodaPro_Medium";
+    font-size: 36px;
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 62px;
+}
+.skill_title4{ 
+    width: 97px;
+    height: 35px;
+    color: #3c92ca;
+    font-family: "SkodaPro_Medium";
+    font-size: 36px;
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 61px;
+}
+
+.skill_text{
+margin-top: 53px;
+margin-left: 40px;
+width: 384px;
+height: 45px;
+color: #131313;
+font-family: "Skoda Pro";
+font-size: 19px;
+font-weight: 700;
+line-height: 25px;
+}
+.skill_text2{
+margin-top: 63px;
+margin-left: 66px; 
+width: 364px;
+height: 45px;
+color: #131313;
+font-family: "Skoda Pro";
+font-size: 19px;
+font-weight: 700;
+line-height: 25px;
+}
+
+.skill_title1::before{
+    content: '';
+    background: url(../img/skill1.png);
+    width: 103px;
+    height: 59px;
+    position: absolute;
+    margin-left: -123px; 
+}
+.skill_title2::before{
+    content: '';
+    background: url(../img/skill2.png);
+    width: 99px;
+    height: 103px;
+    position: absolute;
+    margin-left: -123px;
+    margin-top: -13px; 
+}
+.skill_title3::before{
+    content: '';
+    background: url(../img/skill3.png);
+    width: 103px;
+    height: 91px;
+    position: absolute;
+    margin-left: -123px; 
+}
+.skill_title4::before{
+    content: '';
+    background: url(../img/skill4.png);
+    width: 103px;
+    height: 67px;
+    position: absolute;
+    margin-left: -123px; 
+}
+/*Programm section*/
+.section3{
+    background-image: url('../img/section3fon.png');
+    display: flex;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 40px
+    
+}
+.section3::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0, .7); 
+}
+
+.program_title_part1{
+color: #ffffff;
+font-family: "Skoda Pro";
+font-size: 50px;
+font-weight: 800;
+text-align: center;
+border: 5px solid #3c92ca;
+width: 92px;
+height: 92px;
+line-height: 85px;
+border-radius: 100%; 
+margin: 0 auto;
+}
+
+.program_title_part2{
+width: 121px;
+height: 32px;
+color: #ffffff;
+font-family: "SkodaPro_Medium";
+font-size: 36px;
+font-weight: 400;
+margin-top: 49px;
+margin: 0 auto;
+}
+
+.program_text{
+  margin-top:  25px;
+  margin-left: 30px;
+}
+
+.program_text_part{
+width: 315px;
+color: #ffffff;
+font-family: "Skoda Pro";
+font-size: 15px;
+font-weight: 500;
+line-height: 20px;
+margin-top: 10px;
+}
+
+.program_text_part1{
+    width: 315px;
+    color: #ffffff;
+    font-family: "Skoda Pro";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 10px;
+    }
+
+.program_text_part2{
+    width: 315px;
+    color: #ffffff;
+    font-family: "Skoda Pro";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.title3{
+position: relative;
+width: 330px;
+color: #ececec;
+font-family: "Skoda Pro";
+font-size: 36px;
+font-weight: 500;
+margin: 0 auto;
+margin-top: 66px;
+}
+
+.program_place{
+    margin-top: 73px; 
+}
+
+/*? Form section */
+
+.form_place{
+background-color: #ffffff;
+}
+
+.form_place_title{
+    width: 386px;
+    color: #131313;
+    font-family: "Skoda Pro";
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+.form_place_title{
+background-color: #ffffff;
+font-weight: bold;
+margin: auto;
+margin-top: 64px ;
+}
+.form_place_input{
+width: 255px;
+border-radius: 5px;
+border: 1px solid #3c92ca;
+background-color: #f5f4f4;
+margin-right: -24px;
+line-height: 20px;
+
+}
+
+.form_btn{
+width: 255px;
+height: 36px;
+border-radius: 5px;
+background-color: #3c92ca;
+margin: auto;
+display: block;
+border: 0px;
+}
+.form_btn:hover{
+    background-color: #d0cece;
+   transition: 0.5s;
+   color: #000;
+   outline: none;
+}
+.form_btn:hover .form_btn_text{
+    color: #000;
+    outline: none;
+    transition: 0.5s;
+}
+.form_btn_text{
+    width: 168px;
+    height: 17px;
+    color: #ffffff;
+    font-family: "SkodaPro_Medium";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+}
+
+/* Prepody */
+
+.prepody{
+
+background-color: #e6e6e6;
+padding: 64px;
+margin-top: -30px;
+}
+.title4{
+width: 414px;
+height: 32px;
+color: #131313;
+font-family: "Skoda Pro";
+font-size: 36px;
+font-weight: 700;
+margin: auto;
+text-align: center;
+margin-top: -30px;
+}
+
+.profile1{
+width: 255px;
+height: 447px;
+background-image: url(../img/profile1.png);
+border: 3px solid #3c92ca;
+}
+
+.profile2{
+    width: 255px;
+    height: 447px;
+    background-image: url(../img/profile2.png);
+    border: 3px solid #3c92ca;
+}
+
+.profile3{
+    width: 255px;
+    height: 447px;
+    background-image: url(../img/profile3.png);
+    border: 3px solid #3c92ca;
+}
+.profile4{
+    width: 255px;
+    height: 447px;
+    background-image: url(../img/profile4.png);
+    border: 3px solid #3c92ca;
+}
+
+.profle_holder{
+    margin-top: 59px;
+}
+
+.profile-text_place{
+position: relative;
+width: auto;
+height: 39px;
+background-color: rgba(255, 255, 255, 0.8);
+bottom: -402px;
+padding: 4px;
+display: flex;
+flex-direction: column;
+}
+
+.profile-text{
+
+height: 22px;
+color: #131313;
+font-family: "SkodaPro_Bold";
+font-size: 22px;
+font-weight: 800;
+align-items: center;
+display: flex;
+justify-content: center;
+margin-top:4px;
+flex-direction: column;
+}
+.profile1:hover .more_profile_text {
+    display: block;
+}
+.profile2:hover .more_profile_text {
+    display: block;
+}
+.profile3:hover .more_profile_text {
+    display: block;
+}
+.profile4:hover .more_profile_text {
+    display: block;
+}
+.form_holder{
+  margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.more_profile_text{
+    display: none;
+    width: 226px;
+height: 61px;
+color: #131313;
+font-family: "Skoda Pro";
+font-size: 18px;
+font-weight: 500;
+text-align: center;
+}
+
+.profile1:hover .profile-text_place{
+bottom: -328px;
+width: 249px;
+height: 113px;
+background-color: rgba(255, 255, 255, 0.8);
+transition: 0.5s;
+overflow: hidden;
+} 
+.profile2:hover .profile-text_place{
+    bottom: -328px;
+    width: 249px;
+    height: 113px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+overflow: hidden;
+}
+.profile3:hover .profile-text_place{
+    bottom: -328px;
+    width: 249px;
+    height: 113px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+overflow: hidden;
+}
+.profile4:hover .profile-text_place{
+    bottom: -328px;
+    width: 249px;
+    height: 113px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+overflow: hidden;
+}
+
+
+
+/* Otzivi */
+.otzivi_fon{
+background-image: linear-gradient(to right, #131313 0%, #343434 49%, #131313 100%);
+padding: 63px;
+}
+.title5{
+margin: 0 auto;
+width: 263px;
+height: 28px;
+color: #ffffff;
+font-family: "Skoda Pro";
+font-size: 36px;
+font-weight: 700;
+}
+
+.otziv_holder{
+    margin-top: 30px;
+}
+.otziv{
+display: inline-block;
+width: 350px;
+height: 339px;
+border-radius: 17px;
+background-color: #e6e6e6;
+padding: 36px;
+
+
+}
+
+.otziv_title1,.otziv_title2,.otziv_title3 {
+width: 113px;
+height: 55px;
+color: #131313;
+font-family: "Skoda Pro";
+font-size: 22px;
+font-weight: 800;
+line-height: 29px;
+margin-left: 40%;
+margin-right: auto;
+
+}
+
+.otziv_title1::before{
+content: url(../img/otziv1.png);
+position: absolute;
+margin-left: -125px;
+margin-top: -23px;
+width: 1px;
+height: 1px;
+display: block;
+}
+.otziv_title2::before{
+content: url(../img/otziv2.png);
+position: absolute;
+margin-left: -125px;
+margin-top: -23px;
+width: 1px;
+height: 1px;
+display: block;
+}
+
+.otziv_title3::before{
+content: url(../img/otziv3.png);
+position: absolute;
+margin-left: -125px;
+margin-top: -23px;
+width: 1px;
+height: 1px;
+display: block;
+}
+
+.otziv_text{
+width: 302px;
+height: 169px;
+color: #131313;
+font-family: "SkodaPro_LightItalic";
+font-size: 17px;
+font-style: italic;
+margin-top: 45px;
+}
+
+/*? About us */
+
+.title6{
+width: 388px;
+height: 32px;
+color: #131313;
+font-family: "Skoda Pro";
+font-size: 36px;
+font-weight: 800;
+margin-top: 64px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.map_main {
+	margin: 0 auto;
+}
+.main_caption_map {
+	padding-top: 50px;
+	text-align: center;
+}
+.caption_set_map {
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 36px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.adress_maim {
+	margin-top: 50px;
+}
+.name_city {
+	color: #131313;
+	font-family: "SkodaPro_Bold";
+	font-size: 22px;
+    font-weight: 700;
+   
+}
+.name_city:hover{
+    color: #3c92ca;
+}
+.text_city {
+	margin-top: 18px;
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 18px;
+	font-weight: 500;
+    line-height: 24px;
+  
+}
+.city_street {
+	position: relative;
+	margin-left: 25px;
+}
+.city_tel {
+	margin-left: 25px;
+	position: relative;
+}
+.city_street::before {
+    content: url(../img/adress.png);
+	position: absolute;
+	top: 0;
+	left: -20px;
+	display: block;
+	width: 12px;
+	height: 17px;
+}
+.city_tel::before {
+	content: url(../img/adress_phone.png);
+	position: absolute;
+	top: 0;
+	left: -20px;
+	display: block;
+	width: 17px;
+	height: 17px;
+}
+.map{
+    margin-top: 36px;
+}
+
+.footer_fon{
+background-color: #131313;
+    padding-bottom: 70px;
+    padding-top: 80px;
+}
+
+
+.social_footer{
+    margin: 65px auto 0;
+}
+
+.social {
+    fill: azure;
+}
+
+.social_footer_line::before{
+content: "";
+width: 85px;
+height: 3px;
+background-color: #aeaeae;
+display: block;
+right: 100px;
+position: relative;
+top: 37px;
+}
+
+.social_footer_line::after{
+    content: "";
+    width: 85px;
+    height: 3px;
+    background-color: #aeaeae;
+    display: block;
+    left: 312px;
+    position: relative;
+    bottom: 37px;
+}
+
+.footer_text{
+text-align: center;
+color: #aeaeae;
+font-family: "SkodaPro_Regular";
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+margin-left: auto;
+margin-right: auto;
+}
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; }
+    .hamburger:hover {
+      opacity: 0.7; }
+    .hamburger.is-active:hover {
+      opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: #000; }
+  
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 40px;
+      height: 4px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; }
+  /*
+     * Vortex
+     */
+  .hamburger--vortex .hamburger-inner {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
+    .hamburger--vortex .hamburger-inner::before, .hamburger--vortex .hamburger-inner::after {
+      transition-duration: 0s;
+      transition-delay: 0.1s;
+      transition-timing-function: linear; }
+    .hamburger--vortex .hamburger-inner::before {
+      transition-property: top, opacity; }
+    .hamburger--vortex .hamburger-inner::after {
+      transition-property: bottom, transform; }
+  
+  .hamburger--vortex.is-active .hamburger-inner {
+    transform: rotate(765deg);
+    background-color: #ffffff;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
+    .hamburger--vortex.is-active .hamburger-inner::before, .hamburger--vortex.is-active .hamburger-inner::after {
+      transition-delay: 0s; }
+    .hamburger--vortex.is-active .hamburger-inner::before {
+      top: 0;
+      background-color: #ffffff;
+      opacity: 0; }
+    .hamburger--vortex.is-active .hamburger-inner::after {
+      bottom: 0;
+      background-color: #ffffff;
+      transform: rotate(90deg); }
+  
+  .hamburger {
+      display: none;
+  }
+  .hamburger:focus{
+      outline: none;
+  }
+  .modal_holder{
+      max-width: 200px;
+      max-height: 200px;
+      background-color: #aeaeae;
+  }
+
+/* Media zapros */
+.modal_text{
+    display: inline-block;
+}
+
+@media only screen and (max-width: 4000px) {
+.form_holder{
+    display:flex;
+    flex-direction: row;
+}
+.form_btn{
+    margin-top: 30px;
+}
+.first_form{
+    height: 15px;
+}
+}
+@media only screen and (max-width: 1200px) {
+    
+    .title-second-part{
+    margin-top: 30px;
+    width: 434px;
+    height: 107px;
+    color: #ffffff;
+    font-family: "Skoda Pro";
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 57px;
+    margin-bottom: 34px;
+    }
+    .title-first-part{
+        font-size: 48px;
+        width:440px;
+    height: 222px;
+    }
+    .main-menu-list{
+        font-size: 14px;
+    }
+    .first_form{
+        width: 227px;
+        height: 26px;
+    }
+    .title5{
+        width: 314px;
+    }
+    
+    .fix_otziv{
+        margin-left: 25%;
+    margin-top: 30px;
+    }
+    .btn_form {
+        width: 220px;
+    }
+    .form-title {
+        font-size: 30px;
+    }
+    .skill {
+        width: 464px;
+    }
+    .form_place_input{
+        width: 224px;
+    }
+    .form_btn{
+        width: 205px;
+    }
+    .program_text_part{
+        width: 240px;
+    }
+    .program_text_part2 {
+        width: 215px;
+    }
+    .program_text_part1 {
+        width: 219px;
+    }
+    .profile1,  .profile2,  .profile3,  .profile4{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .main-menu-wrapper{
+        display: flex;
+    }
+
+}
+@media only screen and (max-width: 991px) {
+
+    
+    .social_menu{
+        margin-left: 40px;
+    }
+    .main-menu-wrapper_footer{
+         display:none; 
+         
+    }
+    .socila_menu{
+        margin-left: 40px;
+    }
+
+    .main-menu-wrapper {
+        display: none;
+        background-color: rgba(255, 255, 255, .7);
+        padding: 10px;
+        color: #000;
+        position: absolute;
+        top: 90px;
+        right: 183px;
+        min-width: 250px;
+    }
+.main-menu-item:hover:after,
+.main-menu-item:focus:after {
+   width: 0;
+}
+    .main-menu-link{
+        color: #000;
+        font-family: "SkodaPro_Medium";
+        margin-left: 20px;
+        font-weight: 700;
+    }
+    .main-menu-list{
+        flex-direction: column;
+    }
+   
+    .hamburger {
+		display: block;
+		position: relative;
+	}
+    .title-first-part {
+        text-align: center;
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title-first-part{
+        width: 400px;
+        font-size: 40px;   
+    }
+    .fix_otziv {
+        margin-left: none ;
+        margin-top: 0px;
+    }
+    .form_btn {
+        width: 152px;
+    }
+    .title-second-part {
+        font-size: 40px;
+        margin-bottom: 20px;
+       
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .main-menu-list {
+        font-size: 12px;
+    }
+    .first_form {
+        margin-left: auto;
+    }
+
+    .btn_form {
+        width: 175px;
+        margin-left: 40px;
+    }
+    .form-title {
+        font-size: 25px;
+       
+    }
+    .skill{
+    margin: auto;
+    margin-bottom: 30px;
+    }
+    .main-menu-item {
+        display: inline-block;
+        margin: 9px 5px;
+    }
+    .form_place_input {
+        width: 159px;
+    }
+    
+    .profile1{ 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .profile2 { 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .profile3 { 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .profile4 { 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .program_text_part {
+        width: 217px;
+    }
+    .adres_holder{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .adress_title{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .adress_text{
+        margin-top: 31px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .adress_phone{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .adress_text::before{
+        left: 224px;
+        bottom: 59px;
+    }
+    .adress_phone::before{
+    left: 222px;
+    }
+    .adress_phone::before{
+        width: 156px;
+    }
+    .btn_form {
+        width: 175px;
+      margin-left: auto;
+    }
+    .form_btn_text{
+        width: 156px;
+    }
+    .otziv{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .main-menu-wrapper{
+        top: 94px;
+        right: 89px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .main-menu-wrapper{
+        right: 70px
+
+    }
+}
+@media only screen and (max-width: 767px) {
+    .main-menu-wrapper{
+        top: 94px;
+
+    }
+    .program_text{
+        margin-left: 15px;
+    margin-right: 15px;
+    }
+    .otziv{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+.vertical_line{
+    display: none;
+}
+.flex-container{
+    flex-direction: row;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-first-part{
+    text-align: center;
+}
+.title-second-part{
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.form-title{
+    margin-left: auto;
+    margin-right: auto;
+}
+.form_input{
+    margin-bottom: -30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first_form{
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn_form{
+    margin-left: auto;
+    margin-right: auto;
+}
+.form_holder{
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+.form_btn{
+    margin: 1px -14px 73px 12px;
+}
+
+.adress_text::before {
+    left: 133px;
+}
+.adress_phone::before {
+    left: 130px;
+}
+.title4 {
+    width: 309px;
+}
+.form_place_title {
+    width: 284px;
+}
+.form_btn{
+    margin: 30px 0px 94px 6px;;
+}
+
+}
+
+@media only screen and (min-width: 767px) {
+   .form_holder{ 
+    display: flex;
+   }
+}
+
+@media only screen and (max-width: 515px) {
+    .main-menu-wrapper_footer{
+        display:none; 
+        
+   }
+   .skill_title3{
+    margin-bottom: 1px;
+
+}
+.skill_title4{
+    margin-bottom: 1px;
+    
+}
+    .social_footer_line::after {
+        display: none;
+    }
+    .social_footer_line::before {
+        display: none;
+    }
+    .adress_text::before {
+        left: 105px;
+    }
+    .title-second-part{
+        width: 315px;
+    }
+    .title-first-part {
+        width: 279px;
+        font-size: 40px;
+    }
+    .skill {
+        width: 300px;
+    }    
+    .skill_text {
+        width: 228px;
+        margin-left: 0px; 
+    }
+    .form-block {
+        margin-top: 40px;
+        background: rgba(112, 114, 113, 0.7);
+        padding: 20px;
+        margin-left: auto;
+        
+    }
+    .title-second-part {
+        margin-top: 30px;
+        width: 278px;
+    }
+    .adress_phone::before {
+        left: 102px;
+    }
+    .title5 {
+        width: 261px;
+    }
+    .skill_title3{
+        margin-bottom: 1px;
+
+    }
+    .skill_title4{
+        margin-bottom: 1px;
+        
+    }
+ }
+
+ @media only screen and (max-width: 515px) {
+    .otzivi_fon{
+        padding: 61px;
+    }
+    .form_place_title {
+        background-color: #ffffff;
+        font-weight: bold;
+        margin: auto;
+        margin-top: 18px;
+    }
+    .form_btn {
+        margin: 29px 7px 72px 21px;
+        width: 240px;
+    }
+    .form_input{
+        margin-left: 4px;
+        margin-right: 15px;
+        width: auto;
+    }
+    .form_place_input{
+        margin-left: 8px;
+        margin-right: 15px;
+        width: 100%; 
+    }
+    .otziv {
+        display: inline-block;
+        width: 300px;
+        height: 401px;
+        border-radius: 17px;
+        background-color: #e6e6e6;
+        padding: 36px;
+    }
+    .otziv_text {
+        width: 234px;
+        height: 169px;
+        color: #131313;
+        font-family: "Skoda Pro";
+        font-size: 17px;
+        font-style: italic;
+        margin-top: 12px;
+    }
+    .title6 {
+        width: 197px;}
+ }
+ .title-second-part {
+    margin-top: 30px;
+    width: auto;
+}
+
+ 
+
+ @media only screen and (max-width: 473px) {
+    .social1{
+        margin-left: 10px;
+    }
+    .adress_phone::before {
+        left: 64px;
+    }
+    .adress_text::before {
+        left: 64px;
+    }
+ .title-first-part {
+    width: 236px;
+    font-size: 33px;
+    height: 142px;
+}
+.title-second-part {
+    margin-top: 30px;
+    width: 238px;
+    font-size: 35px;
+}
+.first_form{
+    height: 20px;
+    line-height: 20px;
+    font-family: "SkodaPro_LightItalic";
+
+}
+
+.otziv_title1::before{
+    display: none;
+}
+.otziv_title2::before{
+    display: none;
+}
+.otziv_title3::before{
+    display: none;
+}
+
+.otziv_title1, .otziv_title2, .otziv_title3 {
+    
+    height: 55px;
+    color: #131313;
+    font-family: "Skoda Pro";
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 29px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skill_title1 {
+    
+    height: 35px;
+    color: #3c92ca;
+    font-family: "Skoda Pro";
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    
+}
+.skill_title1::before{
+    display: none;
+}
+.skill_title2::before{
+    display: none;
+}
+.skill_title3::before{
+    display: none;
+}
+.skill_title4::before{
+    display: none;
+}
+.first_form {
+    width: 200px;
+}
+.form-title {
+    width: 186px;
+}
+
+.title-first-part {
+    width: 200px;
+    font-size: 25px;
+}
+
+
+ }
+
+ @media only screen and (max-width: 400px) {
+.otziv{
+        margin-left: -20%;
+    }
+ }
+
+
+@media screen and (max-width: 425px) {
+    .first_form{
+        margin-bottom: 26px;
+    }
+    .text-block{
+        padding: 20px;
+
+    }
+    .title-first-part {
+        line-height: 54px;
+    }
+    .social2 {
+   
+        height: 27px;
+        margin: 10px;
+    }
+    .main-menu-wrapper{
+            right: 32px;
+            top: 100px;
+    }.social2 {
+   
+        height: 27px;
+        margin: 10px;
+    }
+    .main-menu-wrapper{
+            right: 32px;
+            top: 100px;
+    }
+    .title-second-part {
+        margin-top: 30px;
+        width: auto;
+        font-size: 28px;
+        height: 170px;
+    }
+    .skill_title1, .skill_title2, .skill_title3, .skill_title4  {
+        width: auto;
+        height: 10px;
+    }
+    
+    .skill_text {
+        width: auto;
+        margin-left: auto;
+        
+    }
+    .skill{
+height: 260px;
+    }
+    .title3 {
+        width: auto;
+        text-align: center;
+    }
+    .title4 {
+        width: auto;
+    }
+    .prepody {
+        background-color: #e6e6e6;
+        padding: 24px;
+    }
+    .otzivi_fon {
+        background-image: linear-gradient(to right, #131313 0%, #343434 49%, #131313 100%);
+        padding: 6px;
+    }
+    .otziv{
+        width: 250px;
+        height: 364px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 15px;
+    }
+    .otziv_text {
+        width: 100%;
+    }
+
+    .title4 {
+        font-size: 33px;
+        margin-top: 2px;
+    }
+    .title5 {
+        width: auto;
+        text-align: center;
+        margin-bottom: -10px;
+    }
+    .adress_text::before {
+        left: 21px;
+    }
+    .adress_text::before {
+    left: 21px;
+}
+.adress_phone::before {
+    left: 21px;
+}
+
+ .text_city{
+text-align: center;
+}
+.name_city{
+    margin-top: 20px;
+    text-align: center;
+}
+
+}
+
