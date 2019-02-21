@@ -1,0 +1,824 @@
+@charset "UTF-8";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("true-type");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular/Montserrat-Regular.ttf") format("true-type");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: "Montserrat-Regular",  Arial, sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+.crest {
+  width: 30px;
+  height: 30px; }
+
+.no-gutter {
+  padding-right: 0;
+  padding-left: 0; }
+
+.logo {
+  color: #1e1e1e;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 10px;
+  /* Text style for "B, aby" */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  /* Text style for "goodSLEEP" */
+  letter-spacing: 1.5px; }
+
+a {
+  color: #000; }
+  a:hover {
+    color: #000; }
+
+.zakaz_button {
+  border-radius: 20px;
+  background-color: #615aed;
+  border: none; }
+
+.zakaz_button_text {
+  color: #e9e9e9;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+  text-transform: uppercase;
+  /* Text style for "Хочу Звоно" */
+  letter-spacing: 1px; }
+
+.mod_nav {
+  background-color: #e1e1e1; }
+
+.section1 {
+  background-image: url("../img/dakota-corbin-272274-unsplash_(1).png");
+  position: relative;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-position: left;
+  /* Положение фона */ }
+
+.section2 {
+  background-image: url("../img/fon2.png");
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-position: center;
+  /* Положение фона */ }
+
+.section3 {
+  background-image: url("../img/3fon.png");
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-position: center;
+  /* Положение фона */ }
+
+.navbar-nav {
+  margin-left: 50px; }
+
+.zakaz_button1 {
+  border-radius: 32px;
+  background-color: #46ba44;
+  border: none;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: block;
+  margin: auto;
+  margin-bottom: 360px; }
+  .zakaz_button1:hover {
+    cursor: pointer; }
+
+.zakaz_button_text1 {
+  color: #e9e9e9;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 27px;
+  text-transform: uppercase;
+  /* Text style for "заказать" */
+  letter-spacing: 1.8px;
+  text-align: center; }
+
+.text_block {
+  margin-top: 194px; }
+
+.text1 {
+  color: #636363;
+  font-family: "Raleway - Extra Bold";
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 48px;
+  text-transform: uppercase;
+  /* Text style for "УДОБНАЯ" */
+  letter-spacing: 3.6px; }
+
+.text2 {
+  color: #65cb63;
+  font-family: "Raleway - Extra Bold";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  text-transform: uppercase;
+  /* Text style for "Экологичес" */
+  letter-spacing: 2.4px;
+  margin-left: 120px; }
+
+.text3 {
+  color: #636363;
+  font-family: "Raleway - Extra Bold";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 48px;
+  text-transform: uppercase;
+  /* Text style for "Чистая" */
+  letter-spacing: 3px;
+  margin-left: 320px; }
+
+.text4 {
+  color: #636363;
+  font-family: "Raleway - Extra Bold";
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 48px;
+  text-transform: uppercase;
+  /* Text style for "Детская ме" */
+  letter-spacing: 3.6px; }
+
+.text5 {
+  text-align: center;
+  color: #2e2e2e;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  /* Text style for "Здоровье В" */
+  letter-spacing: 1.2px;
+  /* Text style for "превыше вс" */
+  letter-spacing: 1.2px;
+  text-transform: uppercase; }
+
+.title1 {
+  color: #e9e9e9;
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 80px;
+  /* Text style for "н" */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  /* Text style for "аши продук" */
+  letter-spacing: 2.4px;
+  text-align: center;
+  margin-bottom: 90px; }
+
+.title_card {
+  color: #e9e9e9;
+  font-family: "Montserrat-Bold", "Raleway - Semi Bold";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 48px;
+  /* Text style for "Э, ко" */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  /* Text style for "логически" */
+  letter-spacing: 1.8px;
+  text-align: center; }
+
+.card_text {
+  text-align: center;
+  color: #e9e9e9;
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  /* Text style for "М, ы испол" */
+  letter-spacing: 0.9px; }
+
+.card1_bot {
+  margin-top: 120px; }
+
+.card_text_mod {
+  margin-bottom: 190px; }
+
+.title2 {
+  color: #e9e9e9;
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 80px;
+  /* Text style for "Доказано н" */
+  letter-spacing: 2.4px;
+  text-align: center;
+  margin-top: 71px; }
+
+.text_block1 {
+  color: #e9e9e9;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  /* Text style for "Мы хотим ч" */
+  letter-spacing: 0.9px;
+  margin-top: 75px;
+  text-indent: 1.5em;
+  /* Отступ первой строки */
+  text-align: justify;
+  /* Выравнивание по ширине */ }
+
+.Doctor_foto {
+  width: 388px;
+  height: 546px;
+  margin-left: 35px;
+  margin-top: 90px; }
+
+.section4 {
+  background-color: #f2e8f1; }
+
+.title3 {
+  color: #333333;
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 80px;
+  /* Text style for "Ассортимен" */
+  letter-spacing: 2.4px;
+  text-align: center; }
+
+.reverce {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.crovatka_text_holder {
+  margin-top: 50px;
+  margin-left: 30px; }
+
+.crovatka_title {
+  color: #949494;
+  font-family: "Montserrat-Bold";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 80px;
+  /* Text style for "Kid S-3a" */
+  letter-spacing: 3.6px; }
+
+.crovatka_text {
+  color: #393939;
+  font-family: "Montserrat-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  /* Text style for "Проверенна" */
+  letter-spacing: 0.8px; }
+
+.right_align {
+  text-align: right; }
+
+.section5 {
+  background-color: #ebebeb;
+  background-image: linear-gradient(-240deg, rgba(247, 249, 99, 0.5) 0%, rgba(105, 141, 205, 0.5) 100%); }
+
+.title4 {
+  color: #333333;
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 80px;
+  /* Text style for "Что про на" */
+  letter-spacing: 2.4px;
+  text-align: center; }
+
+.otziv_holder {
+  border-radius: 30px;
+  background-color: #e6e6e6;
+  border: none;
+  margin-top: 30px;
+  padding-bottom: 20px; }
+
+.otziv_text {
+  color: #252525;
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  /* Text style for "Д, обрый д" */
+  letter-spacing: 0.7px;
+  padding: 20px; }
+
+.mod_block {
+  display: flex;
+  flex-direction: row; }
+
+.otziv_foto {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row; }
+
+.name_otziv {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin-left: 25px;
+  font-family: "Montserrat-Bold"; }
+
+.data_otziv {
+  display: flex;
+  align-self: flex-end;
+  justify-content: start;
+  margin-left: 25px;
+  align-items: flex-end; }
+
+.show_more {
+  color: #232323;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 80px;
+  text-decoration: underline;
+  /* Text style for "Показать е" */
+  letter-spacing: 0.6px;
+  text-align: center; }
+  .show_more:hover {
+    cursor: pointer; }
+
+.fon_last {
+  background: #96c56f;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #96c56f 14%, #96c56f 14%, #96c56f 57%, #a9db80 86%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #96c56f 14%, #96c56f 14%, #96c56f 57%, #a9db80 86%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #96c56f 14%, #96c56f 14%, #96c56f 57%, #a9db80 86%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96c56f', endColorstr='#a9db80',GradientType=0 );
+  /* IE6-9 */
+  padding-top: 70px;
+  padding-bottom: 200px; }
+
+.docs_holder {
+  display: flex;
+  flex-direction: row; }
+
+.last_title {
+  color: #dfdfdf;
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 60px;
+  /* Text style for "Мы уже пок" */
+  letter-spacing: 2.4px;
+  text-align: center;
+  margin-bottom: 90px; }
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 7px 32px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 30px;
+  background-color: #fffed0;
+  background-image: linear-gradient(-240deg, #fffe9b 0%, #fcc788 100%); }
+
+.title_form {
+  margin-top: 30px;
+  text-align: center;
+  color: #444444;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  margin-bottom: 36px; }
+
+.name {
+  display: flex;
+  flex-direction: row; }
+
+.form-control {
+  width: 288px;
+  height: 50px;
+  box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+  background-color: #f8f8f8;
+  margin-top: 20px; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #232323;
+  font-family: "Montserrat-Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  /* Text style for "И, мя" */
+  letter-spacing: 1.2px; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #232323;
+  font-family: "Montserrat-Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  /* Text style for "И, мя" */
+  letter-spacing: 1.2px; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #232323;
+  font-family: "Montserrat-Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  /* Text style for "И, мя" */
+  letter-spacing: 1.2px; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #232323;
+  font-family: "Montserrat-Regular";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  /* Text style for "И, мя" */
+  letter-spacing: 1.2px; }
+
+.zakaz_button2 {
+  border-radius: 32px;
+  background-color: #46ba44;
+  border: none;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px; }
+
+.doc_mod {
+  display: block;
+  margin: auto; }
+
+.text_mod1 {
+  font-family: "Montserrat-Regular"; }
+
+/* Footer */
+section {
+  padding: 60px 0; }
+
+section .section-title {
+  text-align: center;
+  color: #46ba44;
+  margin-bottom: 50px;
+  text-transform: uppercase; }
+
+#footer {
+  background: #46ba44 !important; }
+
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #ffffff; }
+
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+#footer ul.social li {
+  padding: 3px 0; }
+
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease; }
+
+#footer ul.social li:hover a i {
+  font-size: 30px;
+  margin-top: -10px; }
+
+#footer ul.social li a,
+#footer ul.quick-links li a {
+  color: #ffffff; }
+
+#footer ul.social li a:hover {
+  color: #eeeeee; }
+
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease; }
+
+#footer ul.quick-links li:hover {
+  padding: 3px 0;
+  margin-left: 5px;
+  font-weight: 700; }
+
+#footer ul.quick-links li a i {
+  margin-right: 5px; }
+
+#footer ul.quick-links li:hover a i {
+  font-weight: 700; }
+
+@media (max-width: 1199px) {
+  .text1 {
+    text-align: center;
+    margin: 0; }
+  .text2 {
+    text-align: center;
+    margin: 0; }
+  .text3 {
+    text-align: center;
+    margin: 0; }
+  .text4 {
+    text-align: center;
+    margin: 0; }
+  .text5 {
+    text-align: center;
+    margin: 0; }
+  .zakaz_button_text {
+    color: #e9e9e9;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .card1_bot {
+    margin-top: 0px; }
+  .img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto; }
+  .crovatka_title {
+    text-align: center; }
+  .crovatka_text {
+    margin-bottom: 60px; }
+  .right_align {
+    text-align: justify; }
+  .docs_holder {
+    display: flex;
+    flex-direction: row; }
+  .card_text {
+    text-align: center;
+    color: #e9e9e9;
+    font-family: "Montserrat-Regular";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+    margin-bottom: 40px; }
+  .Doctor_foto {
+    display: block;
+    margin: auto; }
+  .data_otziv {
+    display: flex;
+    align-self: flex-end;
+    justify-content: start;
+    margin-left: 391px;
+    align-items: center; }
+  .show_more {
+    color: #232323;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 80px;
+    text-decoration: underline;
+    letter-spacing: 0.6px;
+    text-align: center; }
+  .zakaz_button {
+    border-radius: 20px;
+    background-color: #615aed;
+    border: none; } }
+
+@media (max-width: 1024px) {
+  .text1 {
+    text-align: center;
+    margin: 0; }
+  .text2 {
+    text-align: center;
+    margin: 0; }
+  .text3 {
+    text-align: center;
+    margin: 0; }
+  .text4 {
+    text-align: center;
+    margin: 0; }
+  .text5 {
+    text-align: center;
+    margin: 0; }
+  .zakaz_button_text {
+    color: #e9e9e9;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .card1_bot {
+    margin-top: 0px; }
+  .img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto; }
+  .crovatka_title {
+    text-align: center; }
+  .crovatka_text {
+    margin-bottom: 60px; }
+  .right_align {
+    text-align: justify; }
+  .docs_holder {
+    display: flex;
+    flex-direction: row; }
+  .card_text {
+    text-align: center;
+    color: #e9e9e9;
+    font-family: "Montserrat-Regular";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+    margin-bottom: 40px; }
+  .Doctor_foto {
+    display: block;
+    margin: auto; }
+  .data_otziv {
+    display: flex;
+    align-self: flex-end;
+    justify-content: start;
+    margin-left: 2px;
+    align-items: center; }
+  .show_more {
+    color: #232323;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 80px;
+    text-decoration: underline;
+    letter-spacing: 0.6px;
+    text-align: center; }
+  .zakaz_button {
+    border-radius: 20px;
+    background-color: #615aed;
+    border: none; } }
+
+@media (max-width: 992px) {
+  .zakaz_button {
+    border-radius: 20px;
+    background-color: #615aed;
+    border: none;
+    margin-left: 46px; }
+  .data_otziv {
+    display: flex;
+    align-self: flex-end;
+    justify-content: start;
+    margin-left: 2px;
+    align-items: center; } }
+
+@media (max-width: 767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px; }
+  .data_otziv {
+    display: flex;
+    align-self: flex-end;
+    justify-content: start;
+    margin-left: 150px;
+    align-items: center; } }
+
+@media (max-width: 525px) {
+  .title2 {
+    color: #e9e9e9;
+    font-family: Raleway;
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 80px;
+    letter-spacing: 2.4px;
+    text-align: center;
+    margin-top: 71px; }
+  .section1 {
+    background-image: url("../img/dakota-corbin-272274-unsplash_(1).png");
+    position: relative;
+    background-repeat: no-repeat;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-position: left; } }
+
+@media (max-width: 425px) {
+  .data_otziv {
+    display: flex;
+    align-self: flex-end;
+    justify-content: start;
+    margin-left: 27px;
+    align-items: center; }
+  .Doctor_foto {
+    width: 319px;
+    height: 514px;
+    margin-left: 35px;
+    margin-top: 90px; }
+  .text1 {
+    color: #636363;
+    font-family: "Raleway - Extra Bold";
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px; }
+  .text2 {
+    color: #65cb63;
+    font-family: "Raleway - Extra Bold";
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px; }
+  .docs_holder {
+    display: none; } }
+
+@media (max-width: 375px) {
+  .data_otziv {
+    display: flex;
+    align-self: flex-end;
+    justify-content: start;
+    margin-left: -33px;
+    align-items: center; }
+  .text1 {
+    color: #636363;
+    font-family: "Raleway - Extra Bold";
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px; }
+  .text2 {
+    color: #65cb63;
+    font-family: "Raleway - Extra Bold";
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px; }
+  .Doctor_foto {
+    width: 275px;
+    height: 514px;
+    margin-left: 35px; } }
