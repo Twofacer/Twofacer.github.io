@@ -408,19 +408,18 @@ a:hover {
     opacity: 1; }
 
 .mode_hover_5 {
-  width: 850px;
-  height: 370px;
+  width: 800px;
+  height: 420px;
   padding-top: 165px;
   padding-left: 67px;
   background-image: url("../img/service_5.png");
   background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 20px; }
-  .mode_hover_5:hover .layer_2 {
+  background-position: center; }
+  .mode_hover_5:hover .layer {
     opacity: 1; }
-  .mode_hover_5:hover .layer_2 .service_title {
+  .mode_hover_5:hover .layer .service_title {
     opacity: 1; }
-  .mode_hover_5:hover .layer_2 .service_text {
+  .mode_hover_5:hover .layer .service_text {
     opacity: 1; }
 
 .section5 {
@@ -652,7 +651,7 @@ a:hover {
 .map {
   box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
   background-color: rgba(2, 22, 35, 0.7);
-  padding: 36px 30px 36px 30px; }
+  padding: 36px 30px 108px  30px; }
 
 .input {
   background-color: transparent;
@@ -740,3 +739,147 @@ input::-webkit-input-placeholder {
   letter-spacing: 0.16px;
   text-align: center;
   margin-top: 40px; }
+
+.map_google {
+  width: 405;
+  height: 424; }
+
+@media only screen and (max-width: 1200px) {
+  .prev {
+    top: 432px; }
+  .map_google {
+    width: 300px; }
+  .section2_foto {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px; } }
+
+@media only screen and (max-width: 1024px) {
+  .team {
+    margin-top: 0px; }
+  .team {
+    margin-top: 0px; }
+  .slide {
+    border-radius: 3px;
+    background-color: #eaebed;
+    width: 660px;
+    height: 360px;
+    display: block;
+    margin: auto;
+    padding-top: 54px;
+    padding-right: 80px; }
+  .prev {
+    display: none !important; }
+  .next {
+    display: none !important; }
+  .spinned_text_holder {
+    width: 652px;
+    height: 422px;
+    background-color: #6df6eb;
+    padding-top: 10px;
+    padding-left: 20px; }
+  .section1_title2 {
+    font-size: 36px; }
+  .map {
+    margin-top: 30px; }
+  .contact_form_button {
+    display: block;
+    margin: auto; }
+  .map_text {
+    text-align: center; }
+  .map_google {
+    display: block;
+    margin: auto; } }
+
+@media only screen and (max-width: 768px) {
+  .section1_title1 {
+    font-size: 33px; }
+  .section1_title2 {
+    font-size: 29px; }
+  .section2 {
+    background-color: #f8fafa;
+    padding: 29px; }
+  .logo {
+    margin-right: 156px; }
+  .profile {
+    width: 300px; }
+  .slick-slide img {
+    display: block;
+    margin: auto; } }
+
+@media only screen and (max-width: 576px) {
+  .work {
+    display: block;
+    margin: auto;
+    margin-top: 10px; }
+  .team {
+    display: block;
+    margin: auto; }
+  .team_2 {
+    display: block;
+    margin: auto; }
+  .comp {
+    display: block;
+    margin: auto; }
+  .comp_second {
+    display: block;
+    margin: auto; }
+  .slide {
+    padding-top: 5px;
+    padding-right: 53px; }
+  .input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Arvo';
+    font-size: 18px;
+    height: 50px;
+    left: 0;
+    margin: 0 0 0 30px;
+    padding: 10px 0px;
+    position: relative;
+    top: 50%;
+    width: 80%; }
+  .rewiew_text {
+    color: #000000;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-top: 30px;
+    letter-spacing: 0.96px; }
+  .text_contact {
+    color: #000000;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+    letter-spacing: 2.16px; }
+  .google_map {
+    width: 300px; }
+  .spinned_text_holder {
+    width: 652px;
+    height: 422px;
+    background-color: #6df6eb;
+    padding-top: 60px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .spinned_text_2 {
+    color: #000000;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    margin-top: 38px; }
+  .map {
+    box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
+    background-color: rgba(2, 22, 35, 0.7);
+    padding: 34px 30px -14px 30px; }
+  .map_google {
+    display: none !important; }
+  .logo {
+    margin-right: 93px; } }
