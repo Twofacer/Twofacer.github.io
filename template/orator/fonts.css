@@ -1,0 +1,40 @@
+/*SkodaPro_Regular */
+@font-face {
+	font-family: "SkodaPro_Regular";
+	src: url('fonts/SkodaPro_Regular/SkodaPro_Regular.eot');
+	src: url('fonts/SkodaPro_Regular/SkodaPro_Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SkodaPro_Regular/SkodaPro_Regular.woff') format('woff'),
+		 url('fonts/SkodaPro_Regular/SkodaPro_Regular.ttf') format('true-type');
+	font-weight: normal;
+	font-style: normal;
+}
+/*SkodaPro_Medium */
+@font-face {
+	font-family: "SkodaPro_Medium";
+	src: url('fonts/SkodaPro_Medium/SkodaPro_Medium.eot');
+	src: url('fonts/SkodaPro_Medium/SkodaPro_Medium.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SkodaPro_Medium/SkodaPro_Medium.woff') format('woff'),
+		 url('fonts/SkodaPro_Medium/SkodaPro_Medium.ttf') format('true-type');
+	font-weight: normal;
+	font-style: normal;
+}
+/*SkodaPro_LightItalic */
+@font-face {
+	font-family: "SkodaPro_LightItalic";
+	src: url('fonts/SkodaPro_LightItalic/SkodaPro_LightItalic.eot');
+	src: url('fonts/SkodaPro_LightItalic/SkodaPro_LightItalic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SkodaPro_LightItalic/SkodaPro_LightItalic.woff') format('woff'),
+		 url('fonts/SkodaPro_LightItalic/SkodaPro_LightItalic.ttf') format('true-type');
+	font-weight: normal;
+	font-style: normal;
+}
+/*SkodaPro_Bold */
+@font-face {
+	font-family: "SkodaPro_Bold";
+	src: url('fonts/SkodaPro_Bold/SkodaPro_Bold.eot');
+	src: url('fonts/SkodaPro_Bold/SkodaPro_Bold.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/SkodaPro_Bold/SkodaPro_Bold.woff') format('woff'),
+		 url('fonts/SkodaPro_Bold/SkodaPro_Bold.ttf') format('true-type');
+	font-weight: normal;
+	font-style: normal;
+}

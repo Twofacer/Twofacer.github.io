@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Гороскоп</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <script src="./scritp.js" type="text/javascript"></script>
+</head>
+<body id='color'>
+    <div class='header'><div class='header_text'> Какой знак у этого года ?</div></div>
+   <div class="content_holder"> 
+       <h1>Happy new Year !</h1>
+    <h2>Восточный гороскоп</h2>
+    <p>
+        <input type="text" id="myYear" value="200">
+    </p>
+    <div>
+        <p>Год: <span id='yearRes'> </span></p>
+        <p>Символ года: <span id='zooRes'> </span></p>
+        <p>Цвет: <span id='colorRes'> </span></p>
+        <p>Стихия: <span id='stRes'> </span></p>
+    </div>
+    <p>
+        <button onclick="play()">
+            Символ года
+        </button>
+    </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,1264 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 14px;
+}
+body {
+	font-family: "SkodaPro_Medium", Arial, sans-serif;
+}
+li {
+	list-style: none;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+	color: #d5d5d5;
+}
+header {
+	position: absolute;
+	top: 42px;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+.no-gutter {
+	padding-right: 0;
+	padding-left: 0;
+}
+.scrollTopBtn {
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	right: 30px;
+	border:none;
+	background: #131313;
+	color: #3c92ca;
+	padding: 15px 20px;
+	border-radius: 50%;
+	outline: 0;
+	cursor: pointer;
+	font-family: "SkodaPro_Bold";
+	font-size: 20px;
+}
+.scrollTopBtn:hover {
+	background-color: #3c92ca;
+	color: #131313;
+}
+
+
+
+.header-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu-main {
+	display: flex;
+	justify-content: space-between;
+}
+.menu-item {
+	margin-left: 45px;
+	position: relative;
+}
+.menu-item:hover::after {
+	transition: .3s;
+	opacity: 1;
+}
+.menu-item::after {
+	content: '';
+	background-color: #3c92ca;
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	display: block;
+	transition: .3s ;
+	opacity: 0;
+}
+
+.menu-link {
+	font-family: "SkodaPro_Medium";
+	font-size: 18px;
+	line-height: 43px;
+	font-weight: 500px;
+	letter-spacing: 1.5px;
+
+/*banner*/
+}
+.banner {
+	padding-top: 138px;
+	padding-bottom: 84px;
+	background: url(img/background.png) no-repeat center / cover;
+	position: relative;
+}
+.banner::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+}
+.banner .container {
+	position: relative;
+	z-index: 22;
+}
+.left_part {
+	border: 6px solid #ffffff;
+}
+.left_part_captext {
+	width: 540px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "SkodaPro_Bold";
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 80px;
+	padding: 42px 56px 0 39px;
+}
+.left_part_discription {
+	color: #ffffff;
+	padding: 11px 75px 43px 40px;
+	font-family: "SkodaPro_Regular";
+	font-size: 43px;
+	font-weight: 300;
+	line-height: 57px;
+}
+.right_part {
+	width: 350px;
+	background-color: rgba(180, 180, 180, 0.6);
+	margin-left: 30px;
+	position: relative;
+	min-height: 453px;
+}
+.right_part_text {
+	color: #ffffff;
+	font-family: "SkodaPro_Bold";
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 43px;
+	font-variant: small-caps;
+	text-align: center;
+	padding: 20px 50px;
+}
+.form-main {
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 130px 34px 29px 34px;
+}
+.form-main .input-box {
+	position: relative;
+	margin: 15px 0 15px 0;
+}
+.form-main .input-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 21px;
+	color:#fff;
+	font-family: "SkodaPro_LightItalic";
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.form-main .input-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 21px;
+	color: #d0cece;
+	font-family: "SkodaPro_LightItalic";
+	pointer-events: none;
+	transition: .5s;
+	line-height: 43px;
+}
+.form-main .input-box input:focus ~ label,
+.form-main .input-box input:valid ~ label {
+	top: -35px;
+	left: 0;
+	color: #3c92ca;
+	font-family: "SkodaPro_LightItalic";
+	font-size: 18px;
+}
+.form-main input[type="submit"] {
+	background: #3c92ca;
+	border: none;
+	outline: none;
+	color: #fff;
+	margin-top: 30px;
+	padding: 10px 60px;
+	border-radius: 50px;
+	font-family: "SkodaPro_Medium";
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 43px;
+	text-transform: uppercase;
+}
+
+/*banner icons*/
+
+.icons-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 10px;
+}
+.line1 {
+	width: 2px;
+	height: 85px;
+	background-color: #aeaeae;
+	
+}
+.line2 {
+	width: 2px;
+	height: 85px;
+	background-color: #aeaeae;
+	
+}
+.icons-set {
+	display: flex;
+	flex-direction: column;
+}
+.icons-item {
+	padding:13px 20px;
+}
+.icons-item:first-child {
+	padding-top: 44px;
+} 
+.icons-item:last-child {
+	padding-bottom: 44px;
+} 
+
+
+/*after courses!*/
+
+.ending_course {
+	margin-top: 64px;
+	display: flex;
+}
+
+.main_caption {
+	text-align: center;
+}
+.caption_set {
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 36px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.skills_main {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 49px;
+
+}
+.skills_el {
+	width: 540px;
+	height: 228px;
+	margin: 15px 15px 15px 0;
+	border: 1px solid #8e8e8e;
+	border-radius: 15px;
+	position: relative;
+}
+.caption_skills {
+	color: #3c92ca;
+	font-family: "SkodaPro_Medium";
+	font-size: 36px;
+	font-weight: 500;
+	position: relative;
+	margin: 50px 115px 0 211px;
+}
+.skills_el::before {
+	content: '';
+	background: url(img/skills/group.png) no-repeat;
+	position: absolute;
+	top: 45px;
+    left: 67px;
+	width: 103px;
+	height: 59px;
+}
+.skills_el:nth-child(2)::before {
+	content: '';
+	background: url(img/skills/like.png) no-repeat;
+	position: absolute;
+	top: 19px;
+    left: 67px;
+	width: 99px;
+	height: 103px;
+}
+.skills_el:nth-child(3)::before {
+	content: '';
+	background: url(img/skills/user.png) no-repeat;
+	position: absolute;
+	top: 30px;
+    left: 67px;
+	width: 103px;
+	height: 91px;
+}
+.skills_el:nth-child(4)::before {
+	content: '';
+	background: url(img/skills/handshake.png) no-repeat;
+	position: absolute;
+	top: 40px;
+    left: 67px;
+	width: 103px;
+	height: 67px;
+}
+.text_skills1 {
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 25px;
+	margin: 32px 80px 46px 66px;
+}
+.text_skills2 {
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 25px;
+	margin: 32px 80px 46px 66px;
+}
+.text_skills3 {
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 25px;
+	margin: 32px 80px 46px 66px;
+}
+.text_skills4 {
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 25px;
+	margin: 32px 80px 46px 66px;
+}
+
+
+/*course programm!*/
+
+.course_programm {
+	margin-top: 62px;
+	background: url(img/background21.png) no-repeat center / cover;
+	padding-bottom: 30px;
+}
+.main_caption_programm {
+	text-align: center;
+	margin-top: 56px;
+}
+.caption_set_programm {
+	font-family: "SkodaPro_Medium";
+	font-size: 36px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #ececec;
+}
+.weeks1 {
+	margin-top: 40px;
+}
+.weeks2 {
+	margin-top: 30px;
+}
+.elips {
+	width: 92px;
+	height: 92px;
+	border: 4px solid #3c92ca;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+.elips::before {
+	content: "1";
+	color: #ffffff;
+	font-family: "SkodaPro_Medium";
+	font-size: 50px;
+	font-weight: 500;
+	position: absolute;
+	top: 7px;
+    left: 34px;
+	display: block;
+}
+.elips2 {
+	width: 92px;
+	height: 92px;
+	border: 4px solid #3c92ca;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+.elips2::before {
+	content: "2";
+	color: #ffffff;
+	font-family: "SkodaPro_Medium";
+	font-size: 50px;
+	font-weight: 500;
+	position: absolute;
+	top: 7px;
+    left: 30px;
+	display: block;
+}
+.elips3 {
+	width: 92px;
+	height: 92px;
+	border: 4px solid #3c92ca;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+.elips3::before {
+	content: "3";
+	color: #ffffff;
+	font-family: "SkodaPro_Medium";
+	font-size: 50px;
+	font-weight: 500;
+	position: absolute;
+	top: 7px;
+    left: 30px;
+	display: block;
+}
+.elips4 {
+	width: 92px;
+	height: 92px;
+	border: 4px solid #3c92ca;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+.elips4::before {
+	content: "4";
+	color: #ffffff;
+	font-family: "SkodaPro_Medium";
+	font-size: 50px;
+	font-weight: 500;
+	position: absolute;
+	top: 7px;
+    left: 27px;
+	display: block;
+}
+.elips5 {
+	width: 92px;
+	height: 92px;
+	border: 4px solid #3c92ca;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+.elips5::before {
+	content: "5";
+	color: #ffffff;
+	font-family: "SkodaPro_Medium";
+	font-size: 50px;
+	font-weight: 500;
+	position: absolute;
+	top: 7px;
+    left: 30px;
+	display: block;
+}
+.elips6 {
+	width: 92px;
+	height: 92px;
+	border: 4px solid #3c92ca;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+.elips6::before {
+	content: "6";
+	color: #ffffff;
+	font-family: "SkodaPro_Medium";
+	font-size: 50px;
+	font-weight: 500;
+	position: absolute;
+	top: 7px;
+    left: 27px;
+	display: block;
+}
+.caption_weeks {
+	text-align: center;
+	font-family: "SkodaPro_Medium";
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: 500;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+.weeks_text1 {
+	width: 325px;
+	margin: 0 auto;
+}
+.weeks_text2 {
+	width: 327px;
+	margin: 0 auto;
+}
+.weeks_text3 {
+	width: 280px;
+	margin: 0 auto;
+}
+.weeks_text4 {
+	width: 325px;
+	margin: 0 auto;
+}
+.weeks_text5 {
+	width: 327px;
+	margin: 0 auto;
+}
+.weeks_text6 {
+	width: 327px;
+	margin: 0 auto;
+}
+.weeks_text_item {
+	list-style-image: url(img/list-style.png);
+	color: #ffffff;
+	font-family: "SkodaPro_Medium";
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 25px;
+}
+.main_caption_call {
+	padding-top: 64px;
+	text-align: center;
+}
+.caption_set_call {
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 36px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+/*form call back*/
+
+.request_main {
+	padding-bottom: 50px;
+}
+#form {
+	padding-top: 45px;
+}
+#request_item {
+	width: 255px;
+	height: 36px;
+	font-family: "SkodaPro_LightItalic";
+	color: #818181;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 13px 0 12px 16px;
+	border: 1px solid #3c92ca;
+	background-color: #f5f4f4;
+	border-radius: 5px;
+}
+#request_item:nth-child(2) {
+	margin-left: 30px;
+}
+#request_item:nth-child(3) {
+	margin-left: 30px;
+}
+#btn_call {
+	width: 255px;
+	height: 36px;
+	background-color: #3c92ca;
+	text-align: center;
+	padding: auto;
+	color: #ffffff;
+	font-family: "SkodaPro_Medium";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-left: 30px;
+	border: none;
+	border-radius: 5px;
+}
+
+/*about teachers*/
+
+.teachers {
+	background-color: #e6e6e6;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+.about_teachers {
+	margin-top: 59px;
+}
+.teacher__item {
+	overflow: hidden;
+	position: relative;
+	border: 3px solid #3c92ca;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.teacher__item:nth-child(1) {
+	margin-left: 0;
+}
+.teacher__item:nth-child(4) {
+	margin-right: 0;
+}
+.teacher__item:hover .teacher__info {
+	transform: translateX(0);
+	transition: 0.5s;
+}
+.teacher__img {
+	display: block;
+	width: 100%;
+}
+.teacher__info {
+	transform: translateY(77px);
+	transition: 0.5s;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #ffffff;
+	opacity: 0.8;
+}
+.teacher__name {
+	color: #131313;
+	font-family: "SkodaPro_Bold";
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+}
+.teacher__descr {
+	min-height: 80px;
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+}
+.about_teachers {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/*about*/
+
+.about_main {
+	background: url(img/background3.png) no-repeat center / cover;
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+.main_caption_about {
+	padding-top: 50px;
+	text-align: center;
+}
+.caption_set_about {
+	color: #fff;
+	font-family: "SkodaPro_Medium";
+	font-size: 36px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.about_wrapper {
+	margin-top: 50px;
+}
+.review {
+	border-radius: 15px;
+	background: #e6e6e6;
+	height: 365px;
+	width: 370px;
+	margin-left: 15px;
+	margin-right: 15px;
+	position: relative;	
+}
+.review::before {
+	content:"";
+	background: url(img/about/about1.png) no-repeat;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	display: block;
+	width: 111px;
+	height: 111px;
+}
+.review:nth-child(2)::before {
+	content:"";
+	background: url(img/about/about2.png) no-repeat;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	display: block;
+	width: 111px;
+	height: 111px;
+}
+.review:nth-child(3)::before {
+	content:"";
+	background: url(img/about/about3.png) no-repeat;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	display: block;
+	width: 111px;
+	height: 111px;
+}
+.review:nth-child(1) {
+	margin-left: 0;
+}
+.review:nth-child(3) {
+	margin-right: 0;
+}
+.caption_review_name {
+	color: #131313;
+	font-family: "SkodaPro_Bold";
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 29px;
+	margin: 46px 93px 49px 145px;
+}
+.text_review {
+	color: #131313;
+	font-family: "SkodaPro_LightItalic";
+	font-size: 18px;
+	padding: 0 22px 15px 15px;
+}
+
+/* map */
+
+.map_main {
+	margin: 0 auto;
+}
+.main_caption_map {
+	padding-top: 50px;
+	text-align: center;
+}
+.caption_set_map {
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 36px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.map_city {
+	margin-top: 50px;
+}
+.caption_city {
+	color: #131313;
+	font-family: "SkodaPro_Bold";
+	font-size: 22px;
+	font-weight: 700;
+}
+.text_city {
+	margin-top: 18px;
+	color: #131313;
+	font-family: "SkodaPro_Medium";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+}
+.city_street {
+	position: relative;
+	margin-left: 25px;
+}
+.city_tel {
+	margin-left: 25px;
+	position: relative;
+}
+.city_street::before {
+	content: "";
+	background: url(img/icons/city1.png);
+	position: absolute;
+	top: 0;
+	left: -25px;
+	display: block;
+	width: 12px;
+	height: 17px;
+}
+.city_tel::before {
+	content: "";
+	background: url(img/icons/city2.png);
+	position: absolute;
+	top: 0;
+	left: -25px;
+	display: block;
+	width: 17px;
+	height: 17px;
+}
+.city:hover .caption_city {
+	color: #3c92ca;
+	cursor: pointer;
+}
+.map_city_wrapper {
+	width: 100%;
+	height: 310px;
+	margin: 36px auto 0 auto;
+}
+.footer {
+	background: #131313;
+	margin: 0 auto;
+}
+.footer {
+	padding: 70px 0;
+}
+.footer_icons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 71px auto 21px auto;
+}
+.line2_footer , .line1_footer {
+	width: 85px;
+	height: 3px;
+	background-color: #aeaeae;
+}
+.icons_set_footer {
+	display: flex;
+	flex-direction: row;
+}
+.icons_item_footer {
+	padding: 0px 15px;
+}
+.icons_item_footer:nth-child(1) {
+	padding-left: 40px;
+}
+.icons_item_footer:nth-child(4) {
+	padding-right: 40px;
+}
+.text_footer_wrapper {
+	text-align: center;
+}
+.text_footer {
+	color: #aeaeae;
+	font-family: "SkodaPro_Medium";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24.18px;
+}
+/*123*/
+.header-wrap-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu-main-footer {
+	display: flex;
+	justify-content: space-between;
+}
+.menu-item-footer {
+	margin-left: 45px;
+	position: relative;
+}
+.menu-item-footer:hover::after {
+	transition: .3s;
+	opacity: 1;
+}
+.menu-item-footer::after {
+	content: '';
+	background-color: #3c92ca;
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	display: block;
+	transition: .3s ;
+	opacity: 0;
+}
+
+.menu-link-footer {
+	font-family: "SkodaPro_Medium";
+	font-size: 18px;
+	line-height: 43px;
+	font-weight: 500px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+
+/*123*/
+.social {
+	width: 27px;
+	height: 27px;
+}
+.social:hover {
+	fill: #3c92ca;
+}
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 0.7; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #000; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+/*
+   * Vortex
+   */
+.hamburger--vortex .hamburger-inner {
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
+  .hamburger--vortex .hamburger-inner::before, .hamburger--vortex .hamburger-inner::after {
+    transition-duration: 0s;
+    transition-delay: 0.1s;
+    transition-timing-function: linear; }
+  .hamburger--vortex .hamburger-inner::before {
+    transition-property: top, opacity; }
+  .hamburger--vortex .hamburger-inner::after {
+    transition-property: bottom, transform; }
+
+.hamburger--vortex.is-active .hamburger-inner {
+  transform: rotate(765deg);
+  background-color: #ffffff;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
+  .hamburger--vortex.is-active .hamburger-inner::before, .hamburger--vortex.is-active .hamburger-inner::after {
+    transition-delay: 0s; }
+  .hamburger--vortex.is-active .hamburger-inner::before {
+    top: 0;
+    background-color: #ffffff;
+    opacity: 0; }
+  .hamburger--vortex.is-active .hamburger-inner::after {
+    bottom: 0;
+    background-color: #ffffff;
+    transform: rotate(90deg); }
+
+.hamburger {
+	display: none;
+}
+
+
+	
+
+@media screen and (max-width: 1200px) {
+	.menu-item {
+		margin-left: 25px;
+		position: relative;
+	}
+	.left_part_captext {
+		font-size: 50px;
+	}
+	.left_part_discription {
+		font-size: 33px;
+	}
+	.icons-main {
+		flex-direction: row;
+
+	}
+	.icons-set {
+		flex-direction: row;
+		justify-content: center;
+	}
+	.icons-item {
+		padding: 44px 20px;
+	}
+	.line1 {
+		width: 85px;
+		height: 2px;
+		background-color: #aeaeae;
+	}
+	.line2 {
+		width: 85px;
+		height: 2px;
+		background-color: #aeaeae;
+	}
+	.skills_el {
+		margin: 20px auto;
+	}
+	.weeks_main1 {
+		margin: 0;
+	}
+	.weeks_main2 {
+		margin: 0;
+	}
+	.weeks1 {
+		width: 49%;
+	}
+	.weeks1:last-child {
+		width: 100%;
+	}
+	.weeks2 {
+		width: 49%;
+	}
+	.weeks2:first-child {
+		width: 100%;
+		margin: 20px auto;
+	}
+	.weeks_text4 {
+   		padding-left: 20px;
+	}
+	#form {
+		display: flex;
+		flex-direction: column;
+	}
+	#request_item {
+		margin: 20px auto;
+	}
+	#request_item:nth-child(2) {
+		margin: 20px auto;
+	}
+	#request_item:nth-child(3) {
+		margin: 20px auto;
+	}
+	#btn_call {
+		margin: 20px auto;
+	}
+	.teacher__info {
+		transform: translateY(100px);
+	}
+	.teacher__name {
+		font-size: 19px;
+	}
+	.teacher__discr {
+		font-size: 18px;
+	}
+	.about_wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.review:nth-child(1) {
+    	margin-left: 15px;
+    	margin-bottom: 25px;
+	}
+	.review:nth-child(3) {
+    	margin-right: 15px;
+    	margin-top: 25px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.hamburger {
+		display: block;
+		position: relative;
+	}
+	.navigation {
+		display: none;
+		background-color: rgba(255, 255, 255, .9);
+		padding: 10px;
+		color: #000;
+		position: absolute;
+		top: 60px;
+		right: 93px;
+		min-width: 250px;
+	}
+	.menu-link {
+		color: #000;
+		font-weight: 700;
+	}
+	.menu-main {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.for_media {
+		flex-direction: column;
+	}
+	.right_part {
+		margin: 50px auto 10px auto;
+	}
+	.ad {
+		width: 75%;
+		margin: 0 auto;
+	}
+	.left_part_captext {
+		font-size: 40px;
+	}
+	.left_part_discription {
+		font-size: 28px;
+	}
+	.right_part_text {
+		font-size: 25px;
+	}
+	.weeks1 {
+		width: 100%;
+	}
+	.weeks2 {
+		width: 100%;
+	}
+	.about_teachers {
+		flex-wrap: wrap;
+		justify-content: inherit;
+	}
+	.teacher__item {
+		margin: 0 20px 20px 0;
+		width: 47%;
+	}
+	.teacher__info {
+    	transform: translateY(77px);
+	}
+	.teacher__name {
+		font-size: 25px;
+	}
+	.teacher__descr {
+		font-size: 20px;
+	}
+	.map_city {
+		margin: 30px auto;
+		text-align: center;
+	}
+	.header-wrap-footer {
+		flex-direction: column;
+	}
+	.menu-main-footer {
+		margin-top: 20px;
+		flex-direction: column;
+		text-align: center;
+	}
+	.menu-item-footer {
+		margin-left: 25px;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.left_part_captext {
+		font-size: 20px;
+		padding: 10% 10% 5% 10%;
+		line-height: 35px;
+		width: 80%;
+	}
+	.left_part_discription {
+		font-size: 17px;
+		padding: 5% 10% 10% 10%;
+		width: 80%;
+		line-height: 23px;
+	}
+	.line1, .line2 {
+		display: none;
+	}
+	.right_part {
+		width: 75%;
+	}
+	.right_part_text {
+		line-height: 30px;
+		padding-top: 50px;
+
+	}
+	.form-main input[type="submit"] {
+		background: #3c92ca;
+		border: none;
+		outline: none;
+		margin: 30px auto;
+		border-radius: 50px;
+		font-family: "SkodaPro_Medium";
+		font-size: 17px;
+		line-height: 13px;
+		text-transform: uppercase;
+		display: block;
+		max-width: 100%;
+		padding: 5% 10%;
+	}
+	.skills_el::before {
+		display: none;
+	}
+	.skills_el {
+		width: 75%;
+		height: 100%;
+	}
+	.caption_set {
+		font-size: 25px;
+	}
+	.caption_skills {
+		margin: 10% auto;
+		font-size: 25px;
+		text-align: center;
+	}
+	.text_skills1, .text_skills2, .text_skills3, .text_skills4 {
+		margin: 10%;
+	}
+	.weeks1, .weeks1:last-child {
+		width: 75%;
+		margin: 30px auto;
+	}
+	.weeks_text1, .weeks_text2, .weeks_text3, .weeks_text4, .weeks_text5, .weeks_text6 {
+		width: 100%;
+		padding-left: 20px;
+	}
+
+	.weeks2, .weeks2:first-child {
+		width: 75%;
+		margin: 30px auto;
+	}
+	.teacher__item {
+		width: 75%;
+		margin: 20px auto;
+	}
+	.teacher__item:first-child {
+		margin: 0 auto 20px auto;
+	}
+	.teacher__item:last-child {
+		margin: 20px auto 0 auto;
+	}
+	.teacher__info {
+		transform: translateY(113px);
+	}
+	.review {
+		width: 75%;
+		height: 100%;
+	}
+	.review::before, .review:nth-child(2)::before, .review:nth-child(3)::before, .review:nth-child(4)::before {
+		display: none;
+	}
+	.caption_review_name {
+		margin: 10% 20%;
+	}
+	.text_review {
+		padding: 0 10% 10% 10%;
+	}
+	.line2_footer, .line1_footer {
+		display: none;
+	}
+}
+
+
+
