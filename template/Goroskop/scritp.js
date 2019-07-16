@@ -60,7 +60,7 @@ function getColor(year, info){
         case 2: color="черный";st="вода";break;
         case 3: color="черный";st="вода";break;
         case 4: color="зеленый";st="дерево";break;
-        case 5: color="зеленый";st="дурево";break;
+        case 5: color="зеленый";st="дерево";break;
         case 6: color="красный";st="огонь";break;
         case 7: color="красный";st="огонь";break;
         case 8: color="коричневый";st="земля";break;
